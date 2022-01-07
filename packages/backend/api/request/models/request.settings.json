@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "name": "request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "description": {
+      "type": "text"
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "Aplus",
+        "Amoins",
+        "Bplus",
+        "Bmoins",
+        "Oplus",
+        "Omoins",
+        "ABplus",
+        "ABmoins"
+      ]
+    },
+    "phone": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "name": "Test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Teest": {
+      "type": "richtext"
+    },
+    "Bool": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

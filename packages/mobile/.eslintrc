@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [""],
+        "alias": {
+          "_assets": "./src/assets",
+          "_components": "./src/components",
+          "_containers": "./src/containers",
+          "_atoms": "./src/components/atoms",
+          "_context": "./src/context",
+          "_molecules": "./src/components/molecules",
+          "_organisms": "./src/components/organisms",
+          "_navigations": "./src/navigations",
+          "_scenes": "./src/scenes",
+          "_services": "./src/services",
+          "_config": "./src/config",
+          "_styles": "./src/styles",
+          "_utils": "./src/utils",
+          "_generated": "./src/generated",
+        },
+      },
+    },
+  },
+};
