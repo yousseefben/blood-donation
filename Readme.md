@@ -7,8 +7,8 @@ The stack utilized is React Native with Apollo GraphQL for generating android an
 
 ## Getting started
 
-    ```js
-        yarn install
-        yarn workspace backend start
-        yarn workspace mobile start
-    ```
+```js
+ yarn install
+ yarn workspace backend start
+ yarn workspace mobile start
+```
